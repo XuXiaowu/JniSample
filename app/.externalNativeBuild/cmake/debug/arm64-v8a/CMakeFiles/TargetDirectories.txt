@@ -1,3 +1,0 @@
-/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native-lib.dir
