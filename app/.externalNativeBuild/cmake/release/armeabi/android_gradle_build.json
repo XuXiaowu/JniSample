@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/xuxiaowu/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/release/armeabi --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-armeabi" : 
+		{
+			"abi" : "armeabi",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/xuxiaowu/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/release/armeabi --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/platforms/android-15/arch-arm  -Dnative_lib_EXPORTS -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/release/armeabi"
+				}
+			],
+			"output" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/build/intermediates/cmake/release/obj/armeabi/libnative-lib.so",
+			"toolchain" : "13745101082086016922"
+		}
+	},
+	"toolchains" : 
+	{
+		"13745101082086016922" : 
+		{
+			"cCompilerExecutable" : "/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/xuxiaowu/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/mips64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-mips64" : 
+		{
+			"abi" : "mips64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/xuxiaowu/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/mips64 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=mips64el-none-linux-android --gcc-toolchain=/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips64  -Dnative_lib_EXPORTS -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/include -isystem /Users/xuxiaowu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/.externalNativeBuild/cmake/debug/mips64"
+				}
+			],
+			"output" : "/Users/xuxiaowu/AndroidStudioProjects/JniSample/app/build/intermediates/cmake/debug/obj/mips64/libnative-lib.so",
+			"toolchain" : "13745101082086016922"
+		}
+	},
+	"toolchains" : 
+	{
+		"13745101082086016922" : 
+		{
+			"cCompilerExecutable" : "/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/xuxiaowu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
