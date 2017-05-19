@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         User user = new User(18, "java");
         jniUtils.modifyUser(user);
         Log.e(TAG, l.toString());
-        Log.e(TAG, "user--> " + user.toString());
+        Log.e(TAG, "user---> " + user.toString());
     }
 
 
