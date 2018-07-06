@@ -1,5 +1,11 @@
 #include <jni.h>
 #include <string>
+#include "blur/GassianBlur.h"
+
+
+//extern "C"{
+//#include "libjpeg-turbo/bitherlibjni.h"
+//}
 
 /**
  * 修改User对象
@@ -51,3 +57,38 @@ Java_xw_jnisample_JniUtils_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
+
+extern "C"
+JNIEXPORT void JNICALL
+Java_xw_jnisample_JniUtils_initCBlur1(JNIEnv *env,
+                                      jobject obj,
+                                      jintArray pix,
+                                      jint w,
+                                      jint h,
+                                      jint r) {
+    gaussBlur1(env->GetIntArrayElements(pix, NULL), w, h, r);
+}
+
+extern "C"
+JNIEXPORT void JNICALL
+Java_xw_jnisample_JniUtils_initCBlur2(JNIEnv *env,
+                                      jobject obj,
+                                      jintArray pix,
+                                      jint w,
+                                      jint h,
+                                      jint r) {
+    gaussBlur2(env->GetIntArrayElements(pix, NULL), w, h, r);
+}
+
+//extern "C"
+//JNIEXPORT void JNICALL
+//Java_xw_jnisample_JniUtils_compressBitmap(
+//        JNIEnv *env, jobject instance,
+//        jstring sourcePath, jstring targetPath) {
+//    Compressor *compressor = new Compressor();
+//    const char *targetPathChar = env->GetStringUTFChars(targetPath, NULL);
+//    const char *sourcePathChar = env->GetStringUTFChars(sourcePath, NULL);
+//    std::string targetPathStr = std::string(targetPathChar);
+//    std::string sourcePathStr = std::string(sourcePathChar);
+//    compressor->compress(targetPathStr, sourcePathStr);
+//}
